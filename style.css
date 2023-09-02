@@ -1,0 +1,785 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('fonts/Gilroy-Regular.ttf') format('truetype');
+    src: url('fonts/Gilroy-Regular.woff') format('woff'),
+         url('fonts/Gilroy-Regular.woff2') format('woff2'); 
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Gilroy';
+    src: url('fonts/Gilroy-Bold.ttf') format('truetype');
+    src: url('fonts/Gilroy-Bold.woff') format('woff'),
+         url('fonts/Gilroy-Bold.woff2') format('woff2'); 
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Gilroy';
+    src: url('fonts/Gilroy-ExtraBold.ttf') format('truetype');
+    src: url('fonts/Gilroy-ExtraBold.woff') format('woff'),
+         url('fonts/Gilroy-ExtraBold.woff2') format('woff2'); 
+    font-weight: 800;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Gilroy';
+    src: url('fonts/Gilroy-Medium.ttf') format('truetype');
+    src: url('fonts/Gilroy-Medium.woff') format('woff'),
+         url('fonts/Gilroy-Medium.woff2') format('woff2'); 
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Gilroy';
+    src: url('fonts/Gilroy-SemiBold.ttf') format('truetype');
+    src: url('fonts/Gilroy-SemiBold.woff') format('woff'),
+         url('fonts/Gilroy-SemiBold.woff2') format('woff2'); 
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+     font-family: 'arpona';
+     src: url("fonts/Arpona-Regular.otf") format("opentype");
+     font-weight: 400;
+ }
+ @font-face {
+     font-family: 'arpona';
+     src: url("fonts/Arpona-Medium.otf") format("opentype");
+     font-weight: 500;
+ }
+ @font-face {
+     font-family: 'arpona';
+     src: url("fonts/Arpona-SemiBold.otf") format("opentype");
+     font-weight: 600;
+ }
+ @font-face {
+     font-family: 'arpona';
+     src: url("fonts/Arpona-Bold.otf") format("opentype");
+     font-weight: 700;
+ }
+ .navbar-expand-lg {
+  z-index: 0;
+}
+ .custom-toggler.navbar-toggler {
+     border: none;
+ }
+ .custom-toggler .navbar-toggler-icon {
+     width: 50px;
+     height: 40px;
+     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28214, 122, 23, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+     }
+ 
+ .offcanvas-body .navbar-nav{
+     color: black;
+     font-family: 'Gilroy';
+     font-size: 16px;
+     gap: 20px;
+     white-space: nowrap;
+     font-weight: 600;
+    
+ }
+ .offcanvas-body .nav-link {
+     position: relative;
+     top: 0;
+     transition: top 0.5s;
+ }
+ 
+ .offcanvas-body .nav-link:hover {
+     color: #d67a17;
+     top: -15%;
+
+ }
+ 
+ .button1 {
+     border: none;
+     background-color: #d67a17;
+     align-items: center;
+     height: 45px;
+     width: 152px;
+     color: white;
+     font-family: 'Gilroy';
+     font-weight: 600;
+     position: relative;
+     top: 0;
+     transition: top 0.5s;
+     
+ }
+ .button1:hover {
+  -webkit-transform: translateY(-7px);
+	transform: translateY(-7px);
+    transition: all 0.5s;
+    background-color: #B75F01;
+ }
+ 
+ .popup {
+  max-width: 500px;
+  min-width: 350px;
+  max-height: 400px;
+     display: none;
+     position: fixed;
+     bottom: 30%;
+     right: 50%;
+     transform: translate(50%);
+     border: 3px solid #f1f1f1;
+     z-index: 10;
+   }
+   .form-container {
+     position: relative;
+     max-width: 100%;
+     padding: 10px 30px;
+     background-color: white;
+     font-family: 'Gilroy';
+   }
+   .form-container h1 {
+ text-align: center;
+ font-size: 36px;
+ font-weight: 700;
+ 
+   }
+   .form-container p {
+     text-align: center;
+     font-size: 18px;
+   }
+   .form-container input[type=text],  .form-container input[type=tel] {
+     width: 100%;
+     padding: 5px;
+     margin: 5px 0 22px 0;
+     border: none;
+     background: #f1f1f1;
+   }
+   #textare {
+     width: 100%;
+     max-height: 100px;
+     padding: 15px;
+     margin: 5px 0 22px 0;
+     border: none;
+     background: #f1f1f1;
+     border: none;
+   }
+   .zatvori {
+ position: absolute;
+ border: none;
+ top: 0;
+ right: 1%;
+ background-color: white;
+ color: #d67a17;
+ font-weight: 900;
+   }
+   .form-container input[type=text]:focus, .form-container input[type=tel]:focus {
+     background-color: #ddd;
+     outline: none;
+   }
+   .button2 {
+    border: none;
+     background-color: #d67a17;
+     align-items: center;
+     height: 45px;
+     width: 152px;
+     color: white;
+     font-family: 'Gilroy';
+     font-weight: 600;
+   }
+   .sand {
+    position: relative;
+    text-align: center;
+
+   }
+.button2:hover {
+  -webkit-transform: translateY(-7px);
+	transform: translateY(-7px);
+    transition: all 0.5s;
+    background-color: #B75F01;
+}
+.popupp {
+  max-width: 500px;
+  min-width: 350px;
+  max-height: 400px;
+     display: none;
+     position: fixed;
+     bottom: 50%;
+     right: 50%;
+     transform: translate(50%);
+     border: 3px solid #f1f1f1;
+     z-index: 10;
+     
+   }
+   .form-containerr {
+     position: relative;
+     max-width: 100%;
+     padding: 10px 30px;
+     background-color: white;
+     font-family: 'Gilroy';
+   }
+   .form-containerr h1 {
+ text-align: center;
+ font-size: 36px;
+ font-weight: 700;
+ padding: 10px 0;
+   }
+   .form-containerr p {
+     text-align: center;
+     font-size: 18px;
+     padding: 10px 70px;
+   }
+
+/*prvidio*/
+
+.prvidio {
+  background-color: black;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 98%),
+  url("slike/backgroundimg1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding-top: 100px;
+}
+.main-tekst {
+  text-align: center;
+    color: white;
+    padding: 22% 0 300px;
+}
+.main-tekst h1{
+  font-size:56px ;
+  font-weight: 600;
+  font-family: 'arpona';
+  
+}
+.main-tekst p{
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'Gilroy';
+  letter-spacing: 4px;
+}
+.logo {
+  text-align: center;
+  
+}
+.logo1 {
+  padding: 20px 30px;
+}
+.logo2 {
+  padding: 20px 30px;
+}
+.strelica {
+  text-align: center;
+}
+/*drugidio */
+#drugidio {
+  background-color: #000000;
+  padding: 60px 0 80px;
+  border-bottom: solid 3px #d67a17;
+}
+.drugi {
+  text-align: center;
+  color: white;
+}
+.drugi span {
+  color:#d67a17 ;
+}
+.drugi h1 {
+  font-family: 'arpona';
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0 23%;
+}
+.drugi p {
+  font-family: 'Gilroy';
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0 17%;
+}
+.noz {
+  padding: 20px 0;
+}
+/*treci dio*/
+
+.trecidio {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 98%),
+  url("slike/cvike.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding-top: 700px;
+ 
+}
+.trecislika2 {
+  display: none;
+}
+
+.trecislika {
+  display: none;
+}
+/*cetvrti dio*/
+
+.cetvrtidio {
+  padding: 300px ;
+  position: relative;
+  background: linear-gradient(180deg,#000000,#1A1A1A 100%);
+}
+.cetvrtidio .container {
+ position: absolute;
+ top: 0%;
+ right: 50%;
+ transform: translate(50%,-25%);
+}
+.cetritekst {
+  text-align: center;
+  padding-bottom: 10px;
+  color: white;
+}
+.cetritekst h1{
+  font-family: 'arpona';
+  font-size: 30px;
+  font-weight: 600;
+}
+.cetritekst p {
+  font-family: 'Gilroy';
+  font-size: 18px;
+  font-weight: 500;
+}
+.cetvrtidio .grid {
+  display: grid;
+  grid-template-columns:repeat(3,1fr);
+  gap: 30px;
+  padding: 0 9%;
+}
+.grid .card {
+  border: none;
+
+}
+.grid .card-body {
+  border-bottom: solid 3px #d67a17;
+  background-color: #1C1C1C;
+  color: white;
+}
+.cetvrtidio .card-title {
+  font-size: 20px;
+  font-family: 'Gilroy';
+  padding: 20px 25px 10px 30px;
+}
+.cetvrtidio .card-text {
+  font-family: 'Gilroy';
+  padding: 0 25px 30px 25px;
+
+}
+.dugme4 {
+  text-align: center;
+  padding: 40px 0 0;
+}
+#petidio{
+  padding-top: 60px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+#petidio h1 {
+  font-family: 'arpona';
+  font-size: 36px;
+  font-weight: 600;
+  color: #d67a17;
+}
+#petidio p {
+  font-family: 'Gilroy';
+  font-size: 24px;
+  padding: 10px 11% 10px 11%;
+}
+.logoo1 {
+  margin: 10px 40px;
+  width: 150px;
+}
+/*sestidio*/
+.sestidio {
+  background-image: linear-gradient(rgba(9, 9, 17, 0.5), rgba(8, 8, 7, 0.5)),
+  url("slike/whatwe.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #171717;
+}
+.sestitekst {
+  padding-top: 30px;
+  text-align: center;
+  color: white;
+}
+.sestitekst h1 {
+  font-family: 'arpona';
+  font-size: 36px;
+  font-weight: 600;
+ 
+}
+.sestitekst h3 {
+  font-family: 'Gilroy';
+font-size: 24px;
+font-weight: 600;
+}
+.sestitekst p {
+  font-family: 'Gilroy';
+  font-size: 18px;
+  padding: 0 27%;
+}
+.light {
+  text-align: center;
+}
+.light1 {
+  background-color: rgba(29, 28, 28, 0.6); 
+  border-radius: 10px;
+  padding: 20px 0 30px;
+  height: 234px;
+}
+.light .grid {
+  display: grid;
+  grid-template-columns:repeat(3,1fr);
+  gap: 30px;
+  padding: 20px 9% 100px;
+}
+.light img {
+  padding: 20px 0;
+}
+.light h3 {
+  color: white;
+  font-family: 'Gilroy';
+  font-size: 18px;
+  font-weight: 700;
+}
+.light p {
+  color: white;
+  font-family: 'Gilroy';
+  padding: 10px 10%;
+}
+/*sedmi dio*/
+.sedmidio {
+  
+  background: linear-gradient(180deg,#000000,#1A1A1A 100%);
+  padding: 40px 0px 60px ;
+}
+.sedmitekst {
+  color: white;
+  text-align: center;
+}
+.sedmitekst h1 {
+color: #d67a17;
+font-family: 'arpona';
+  font-size: 36px;
+  font-weight: 600;
+}
+.sedmitekst h2 {
+font-size: 24px;
+font-weight: 600;
+font-family: 'Gilroy';
+}
+.sedmitekst p {
+font-size: 18px;
+font-family: 'Gilroy';
+padding: 0 10%;
+}
+.sedmitekst h4 {
+font-size: 18px;
+font-family: 'Gilroy';
+font-weight: 400;
+letter-spacing: 2px;
+padding-bottom: 20px;
+}
+
+.sedmi .grid {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 36px;
+}
+.sedmi .card-img-top {
+  width: 100%;
+height: 100%;
+}
+.sedmi .card-title {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Gilroy';
+  text-align: center;
+}
+.sedmidugme {
+  text-align: center;
+  padding-top: 60px;
+}
+/*osmi dio*/
+.osmidio {
+  padding: 100px 0 100px;
+  background-color: #171717;
+}
+
+/*deveti dio*/
+.tekstt {
+  text-align: center;
+  padding: 30px 0;
+  background-color: #d67a17;
+  color: white;
+}
+.tekstt h1 {
+  font-family: 'Gilroy';
+  font-size: 30px;
+  font-weight: 500;
+}
+.devetidio {
+  background-image: linear-gradient(rgba(9, 9, 17, 0.5), rgba(8, 8, 7, 0.5)),
+  url("slike/zadnja.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #171717;
+}
+.devetitekst {
+  text-align: center;
+  color: white;
+  padding: 80px 0;
+}
+.devetitekst h1 {
+  font-family: 'Gilroy';
+  font-size: 36px;
+  font-weight: 600;
+  padding: 0 33%;
+}
+.devetitekst p {
+  font-family: 'Gilroy';
+  font-size: 18px;
+  padding: 0 30%;
+}
+footer {
+  background-color: #000000;
+  padding: 30px 80px;
+  text-align: center;
+}
+.nogaa {
+  display: none;
+  text-decoration: none;
+  color:#8B8B8B ;
+  padding-bottom: 20px;
+}
+.nogaa:hover {
+  color:#d67a17 ;
+}
+.nona {
+  text-decoration: none;
+  color:#8B8B8B ;
+}
+.nona:hover {
+  color:#d67a17 ;
+}
+.noga span {
+  color:#8B8B8B ;
+  
+}
+.stakovana {
+  width: 100%;
+    border: none;
+    background-color: #d67a17;
+    align-items: center;
+    height: 55px;
+    color: white;
+    font-family: 'Gilroy';
+    font-weight: 600;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: none;
+}
+
+@media (max-width:1000px) {
+
+  .offcanvas-body{
+    background-color: black;
+    text-align: center;
+    margin-top: -50px;
+    padding-top: 100px !important;
+    
+  }
+  .navbar-nav a {
+    color: white;
+    border-bottom: solid 1px #393939;
+    font-size: 26px;
+    padding-top: 20px;
+    padding-bottom: 35px;
+  }
+.button1 {
+  display: none;
+}
+
+.popup {
+  overflow: scroll;
+  max-width: 500px;
+  min-width: 350px;
+  height: auto;
+     display: none;
+     position: fixed;
+     bottom: 20%;
+     right: 50%;
+     transform: translate(50%);
+     z-index: 10;
+   }
+   .popupp {
+    max-width: 300px;
+    min-width: 250px;
+    max-height: 400px;
+       display: none;
+       position: fixed;
+       bottom: 40%;
+       right: 50%;
+       transform: translate(50%);
+       border: 3px solid #f1f1f1;
+       z-index: 10;
+     } .form-containerr p {
+      text-align: center;
+      font-size: 18px;
+      padding: 10px 0px;
+    }
+/*prvi dio*/
+.prvidio {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 38%),
+  url("slike/backgroundimg1.jpg");
+  background-size: contain;
+}
+.logo1 {
+  padding: 20px 10px;
+}
+.logo2 {
+  padding: 20px 20px;
+}
+.main-tekst {
+    padding: 22% 0 10px;
+}
+.strelica {
+  display: none;
+}
+/*drugi dio*/
+.trecidio {
+  border-bottom: none;
+
+}
+.trecislika2 {
+  display: none;
+  
+}
+.trecidio {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 98%),
+  url("slike/cojek.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 400px;
+ 
+}
+
+.trecislika {
+  display: none;
+}
+#drugidio {
+  padding: 120px 0 60px;
+}
+.drugi h1 {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0 15px;
+}
+.drugi p {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0 15px;
+}
+.trecislika {
+  max-width: 100%;
+  background-image: linear-gradient(to bottom right,#000000 100%,white 0%);
+}
+/*cetvrti dio*/
+.cetvrtidio {
+  padding: 0;
+  height: auto;
+  position: static;
+}
+
+.cetvrtidio .container {
+  position: static;
+  -webkit-transform: translateY(-110px);
+	transform: translateY(-110px);
+  top: none;
+  right: none;
+
+
+}
+.cetvrtidio .grid {
+  display: grid;
+  grid-template-columns:repeat(1,1fr);
+  gap: 40px;
+  padding: 0 16px;
+}
+
+/*petidio*/
+.logoo1 {
+  margin: 10px 15px;
+}
+#petidio p {
+  font-family: 'Gilroy';
+  font-size: 24px;
+  padding: 10px 15px 10px 15px;
+}
+/*sesti dio*/
+.sestidio {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(9,9,9,1) 25%),
+  url("slike/cojeksjedi.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.light1 {
+  margin: 0px 31px;
+}
+.light .grid {
+  display: grid;
+  grid-template-columns:repeat(1,1fr);
+  gap: 30px;
+  padding: 20px 20px 20px;
+}
+.sestitekst p {
+  font-family: 'Gilroy';
+  font-size: 18px;
+  padding: 0 20px;
+}
+/*sedmi dio*/
+.sedmidio {
+background-image: linear-gradient(to bottom, rgba(9,9,9,1) 0%, rgba(9,9,9,1) 25%);
+  padding: 40px 0 60px ;
+}
+.sedmi .grid {
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  gap: 36px;
+}
+.sedmi .card {
+  margin: 0 15px;
+}
+/*devetidio*/
+.devetidio {
+  background-image: linear-gradient(rgba(9, 9, 17, 0.5), rgba(8, 8, 7, 0.5)),
+  url("slike/zadnja2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #171717;
+}
+.devetitekst {
+  text-align: center;
+  color: white;
+  padding: 80px 0 50px;
+}
+.devetitekst h1 {
+  font-size: 30px;
+  padding: 0 20px;
+}
+.devetitekst p {
+  padding: 0 20px;
+}
+/*footer*/
+footer {
+  padding: 30px 80px 80px;
+}
+.nogaa {
+  display: block;
+}
+.nona {
+  display: none;
+}
+.stakovana {
+  display: block;
+}
+}
